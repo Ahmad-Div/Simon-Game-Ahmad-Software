@@ -1,0 +1,116 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+  position: relative;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+  line-height: 6rem;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+footer {
+  color: white;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  transition: 0.7s ease;
+  position: relative;
+}
+
+footer a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  transition: 0.25s ease;
+  background-color: aqua;
+}
+
+footer a:hover::after {
+  transform: scaleX(1);
+}
+
+footer a:hover {
+  color: aqua;
+}
+
+
+.mobile-button-start-game {
+  width: 100%;
+  margin: 6rem 0;
+
+}
+
+.mobile-button-start-game button {
+  width: fit-content;
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: 0.7s ease;
+}
+
+.mobile-button-start-game button:hover {
+  transform: scale(1.1);
+}

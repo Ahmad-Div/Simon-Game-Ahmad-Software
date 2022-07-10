@@ -72,7 +72,7 @@ $(document).ready(function () {
 
 
     function playSound(name) {
-        let buttonSound = new Audio("sounds/" + name + ".mp3");
+        let buttonSound = new Audio("" + name + ".mp3");
         buttonSound.play();
     }
 
@@ -100,7 +100,7 @@ $(document).ready(function () {
     }
 
     function gameOver() {
-        let gameOverSound = new Audio("sounds/wrong.mp3");
+        let gameOverSound = new Audio("wrong.mp3");
         gameOverSound.play();
         $("body").addClass("game-over");
         $("#level-title").text("Game Over, Press Any key to Restart");
